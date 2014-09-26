@@ -1,0 +1,10 @@
+<ion-view title="Recipes">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="recipe in Recipes.recipes" type="item-text-wrap" class="item-avatar" href="#/tab/recipes/{{recipe.id}}">
+      <img src="{{recipe.attachments[0].url}}">
+        <h2 ng-bind-html="recipe.title"></h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
